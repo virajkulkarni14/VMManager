@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PageRedirect</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageRedirect</servlet-name>
+    <url-pattern>/UserLogged</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DisplayVMDetails</servlet-name>
+    <servlet-class>VMControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayVMDetails</servlet-name>
+    <url-pattern>/DisplayVMDetails</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateNewVM</servlet-name>
+    <servlet-class>VMManagerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateNewVM</servlet-name>
+    <url-pattern>/CreateNewVM</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeployNewVM</servlet-name>
+    <servlet-class>DeployVMServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeployNewVM</servlet-name>
+    <url-pattern>/DeployNewVM</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreateCPUStatistics</servlet-name>
+    <servlet-class>GetStatsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateCPUStatistics</servlet-name>
+    <url-pattern>/CreateCPUStatistics</url-pattern>
+  </servlet-mapping>
+  
+  <display-name>Sample283</display-name>
+  <display-name>LoginExample</display-name>
+  <welcome-file-list>
+    <welcome-file>LoginPage.jsp</welcome-file>
+    <welcome-file>InvalidLogin.jsp</welcome-file>
+    <welcome-file>UserLogged.jsp</welcome-file>
+    <welcome-file>VMInfo.jsp</welcome-file>
+     <welcome-file>CPUStatisticsJsp.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

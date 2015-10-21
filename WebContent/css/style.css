@@ -1,0 +1,36 @@
+body {
+  background-image: url('../images/background_mountain1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#imagesCarousel {
+  width: 500px;
+  height: 333px;
+  margin:0 auto;
+}
+.carousel-inner {
+  width: 900px;
+}
+.nav.nav-pills {
+  float: right;
+  margin-right: 100px;
+}
+.logo {
+  text-indent: -999999px;
+  background: url('../images/logo-design.png') no-repeat;
+  margin-left: 100px;
+  width: 500px;
+  height: 136px;
+}
+.footer {
+  margin-left: 100px;
+}
+.thumnails {
+  margin-left: 100px
+}
+.image2 {
+  margin-left: 75px
+}
+.image3 {
+  margin-left: 75px
+}
